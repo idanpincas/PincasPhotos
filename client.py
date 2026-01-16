@@ -18,7 +18,7 @@ def send_file(sock: socket.socket, file_path: str):
         sock.send(f"{filename}\n".encode())
         sock.recv(1024)  # המתנה לאישור
 
-        # שליחת גודל הקובץ
+        # שליחת גודל הקובץssss
         sock.send(f"{filesize}\n".encode())
         sock.recv(1024)  # המתנה לאישור
 
